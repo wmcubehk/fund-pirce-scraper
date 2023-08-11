@@ -175,7 +175,7 @@ class AvenueScrapeTask(ScrapeTask):
                 yield self.clean_fund_data(date, 'HK0000675881', 'Avenue Fixed Income Fund Class A HKD', 'HKD', price)
             else:
                 price = prices[5].split(' ')[1]
-            yield self.clean_fund_data(date, 'HK0000675899', 'Avenue Fixed Income Fund Class B USD', 'USD', price)
+                yield self.clean_fund_data(date, 'HK0000675899', 'Avenue Fixed Income Fund Class B USD', 'USD', price)
         except Exception as e:
             print()
             print('Avenue:', e)
